@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
       const handleRouteChange = () => scroll.destroy();
       router.events.on('routeChangeStart', handleRouteChange)
       
-  });
+  }, []);
 
   return (
     <>
